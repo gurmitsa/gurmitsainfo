@@ -1,30 +1,15 @@
 import React from "react";
-import styled from 'styled-components';
 import Typical from 'react-typical';
-
-const Title = styled.h1`
-  color: #074d88;
-  font-size: 75px;
-  font-weight: 500;
-  text-align: left;
-  margin: 1em;
-`;
-
-const SubTitle = styled.h2`
-  color: #074d88;
-  font-size: 25px;
-  font-weight: 500;
-  text-align: left;
-  margin: 3em;
-`;
+import './Intro.css';
 
 class Intro extends React.Component {
 
     render(){
         return (
             <div >
-            <Title>Hello! My name is Gurmit.</Title>
-            <SubTitle>I'm a{' '} 
+                <header className="Intro-header">
+            <h1>Hello! My name is Gurmit.</h1>
+            <p>I'm a{' '} 
                 <Typical
                 loop={5}
                 wrapper="b"
@@ -39,7 +24,8 @@ class Intro extends React.Component {
                     2500
                 ]}
                 />
-            </SubTitle>
+            </p>
+            </header>
             </div>
 
         )
